@@ -6,4 +6,14 @@ class Util{
 		header('Location: ' . $url, true, $statusCode);
 		die();
 	}
+
+
+	static function addNotification($type, $message)
+	{
+		$notif = new stdClass();
+	 	$notif->type = $type;
+	 	$notif->message = $message;
+		if(!isset($_SESSION['notifications'])) $_SESSION['notifications'] = [$notif];		 
+		else array_push($_SESSION['notifications'], $notif);
+	}
 }

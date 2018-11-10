@@ -18,7 +18,6 @@ class User
         $this->lastname = $lastname;
         if ($authority == 1)  $this->authority = "administrator";
         else $this->authority = "user";
-        $this->authority = $authority;
         $this->email = $email;
         $this->active = $active;
     }

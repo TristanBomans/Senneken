@@ -1,0 +1,15 @@
+
+ErrorDocument 404 /404
+
+ErrorDocument 403 /403
+
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
+Options All -Indexes
+
+

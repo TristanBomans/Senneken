@@ -11,7 +11,7 @@
 	foreach (glob($_SERVER['DOCUMENT_ROOT'] . "/Schoolproject Senne/models/*.php") as $filename){
 	    include_once $filename;
 	}
-	#HIER DEFINE IK DE CONSTANTE VAN URL EN PREVURL (PREVIOUSURL)
+	
 	if (!defined('URL')){
 			define('URL'," /" );
 	}

@@ -36,7 +36,6 @@ class Dao {
             {
                 mysqli_close($mysqli);
                 return false;
-
             }       
         }
         mysqli_close($mysqli);
