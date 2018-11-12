@@ -1,9 +1,3 @@
-
-ErrorDocument 404 /404
-
-ErrorDocument 403 /403
-
-
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d 
@@ -12,4 +6,6 @@ RewriteRule ^(.*)$ $1.php
 
 Options All -Indexes
 
+ErrorDocument 404 http://localhost:56327/Schoolproject%20Senne/404
 
+ErrorDocument 403 http://localhost:56327/Schoolproject%20Senne/403

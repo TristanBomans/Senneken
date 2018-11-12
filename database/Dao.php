@@ -7,7 +7,7 @@ class Dao {
     // USER
     static function getAllUsers() 
     {
-        require "/credentials.php";
+        require "credentials.php";
         $mysqli = new mysqli($host, $user, $passwd, $database);
         $result = $mysqli->query("SELECT * FROM users");
         $userArray = [];
@@ -22,7 +22,7 @@ class Dao {
 
     static function checkUser($logUser) 
     {
-        require "/credentials.php";
+        require "credentials.php";
         $mysqli = new mysqli($host, $user, $passwd, $database);
         $result = $mysqli->query("SELECT * FROM users where username = '$logUser->username'");
         $userArray = [];
