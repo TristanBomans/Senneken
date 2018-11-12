@@ -16,6 +16,11 @@
 		<link rel="stylesheet" type="text/css" href="style/login.css">
 	<?php } ?>
 
+	<?php if(basename($_SERVER['PHP_SELF']) == "profile.php"){ ?>
+		<script src="scripts/profile.js"></script>
+	<?php } ?>
+
+
 
 
 
